@@ -1,0 +1,83 @@
+{
+  "name": "ai-telegram-bot-dashboard",
+  "version": "1.0.0",
+  "description": "AI-powered Telegram bot with a comprehensive web dashboard for managing and enhancing AI-assisted conversations and content analysis.",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "format": "prettier --write \"src//.{js,ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio",
+    "prisma:push": "prisma push",
+    "prisma:db:push": "npx prisma db push",
+    "prisma:db:push-reset": "npx prisma db push --force-reset",
+    "prisma:db:seed": "npx prisma db seed",
+    "postinstall": "prisma generate && prisma db push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spectra-ai-codegen/ai-telegram-bot-dashboard.git"
+  },
+  "author": "Spectra.Codes",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.4",
+    "@types/cors": "^2.8.13",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "@types/langchain": "^0.1.1",
+    "@types/node": "^20.3.1",
+    "@types/openai": "^3.3.0",
+    "@types/react": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.43.0",
+    "eslint-config-next": "^13.4.12",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.6.2",
+    "next": "^13.4.12",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.26",
+    "prettier": "^3.0.1",
+    "prisma": "^5.2.1",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@next/font": "^13.4.12",
+    "@prisma/client": "^5.2.1",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "framer-motion": "^10.13.0",
+    "langchain": "^0.0.132",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "node-telegram-bot-api": "^0.65.0",
+    "openai": "^3.4.0",
+    "react-icons": "^4.10.1",
+    "react-query": "^4.24.2",
+    "uuid": "^9.0.0",
+    "zustand": "^4.3.8"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "isolatedModules": true,
+    "noEmit": true,
+    "incremental": true,
+    "types": [
+      "node",
+      "next",
+      "react",
+      "langchain",
+      "openai",
+      "prisma",
+      "node-telegram-bot-api",
+      "lodash",
+      "moment",
+      "axios",
+      "uuid",
+      "body-parser",
+      "cors",
+      "dotenv",
+      "zustand",
+      "react-icons",
+      "react-query",
+      "framer-motion"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/": ["./src/"]
+    },
+    "skipLibCheck": true
+  },
+  "include": [
+    "src//.ts",
+    "src//.tsx",
+    "src//.js",
+    "src//.jsx",
+    "pages//.ts",
+    "pages//.tsx",
+    "pages//.js",
+    "pages//.jsx",
+    "app//.ts",
+    "app//.tsx",
+    "app//.js",
+    "app//.jsx",
+    "next.config.js",
+    "tailwind.config.js",
+    "prisma/schema.prisma"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "references": [
+    {
+      "path": "./prisma/schema.prisma"
+    }
+  ]
+}
